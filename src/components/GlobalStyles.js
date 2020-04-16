@@ -12,7 +12,7 @@ import 'reset-css';
 
 const GlobalStyles = createGlobalStyle`
     body {
-        @import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
         height: 100vh;
         width: 100%;
         font-family: 'Open Sans', sans-serif;
@@ -46,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         font-size: 1.1rem;
+        line-height: 1.4;
     }
 
     // Hover effect for nav links
@@ -58,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
             content: "";
             height: 2px;
             width: 0%;
-            background: snow;
+            background: #1789FC;
             position: absolute;
             bottom: 0;
             transition: .2s all linear;
@@ -73,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
         }
         
         &:hover {
-            color: snow;
+            color: #1789FC;
 
             &:before, &:after {
                 width: 100%;

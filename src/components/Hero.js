@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LargeEagle from '../assets/large-eagle.jpg';
 import Navbar from './Navbar';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const STYLES = styled.div`
     background: url(${LargeEagle});
@@ -32,7 +34,7 @@ const STYLES = styled.div`
     .container {
         position: absolute;
         top: 20rem;
-        width: 100%;
+        //width: 100%;
         padding: 1rem;
         background: linear-gradient(
             rgba(0, 0, 0, 0.8),
@@ -59,6 +61,11 @@ const STYLES = styled.div`
             left: 3rem;
             width: auto;
             padding: 1.5rem 1rem;
+        }
+
+        h5 {
+            padding-top: 10em;
+            font-size: 3rem;
         }
     }
 `;
